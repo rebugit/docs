@@ -1,8 +1,8 @@
 ---
 metadata:
-  name: BooGi
-  short_name: BooGi
-  description: BooGi - awesome GitBook-like documentation generator using Gatsby
+  name: Rebugit
+  short_name: Rebugit
+  description: Rebugit - Bug reproduction in minutes
   language: en
   pathPrefix: "/"
   siteImage:
@@ -14,15 +14,9 @@ header:
   logoLink: "/"
   helpUrl: ""
   links:
-    - text: BooGi
-      link: https://github.com/filipowm/boogi
+    - text: Rebugit
+      link: https://rebugit.com
       external: true
-    - text: Gatsby
-      link: https://www.gatsbyjs.org
-      external: true
-    - text: Docs
-      link: "/"
-      external: false
 sidebar:
   enabled: true
   # forcedNavOrder:
@@ -32,25 +26,25 @@ sidebar:
   # expanded:
   groups:
     - order: 1
-      path: "/gettingstarted"
-      title: ":rocket: Getting Started"
+      path: "/selfhosted"
+      title: ":rocket: Self hosted"
     - order: 2
-      path: "/configuration"
-      title: ":wrench: Configuration"
-    - order: 3
-      path: "/editing"
-      title: ":writing_hand: Editing Content"
-    - order: 4
-      path: "/deployment"
-      title: ":rocket: Deployment"
-    - order: 5
-      path: "/developing"
-      title: ":computer: Developing"
+      path: "/sdks"
+      title: ":wrench: SDKs"
+#    - order: 3
+#      path: "/editing"
+#      title: ":writing_hand: Editing Content"
+#    - order: 4
+#      path: "/deployment"
+#      title: ":rocket: Deployment"
+#    - order: 5
+#      path: "/developing"
+#      title: ":computer: Developing"
   links:
-    - text: BooGi
-      link: https://github.com/filipowm/boogi
-    - text: React
-      link: https://reactjs.org
+#    - text: BooGi
+#      link: https://github.com/filipowm/boogi
+#    - text: React
+#      link: https://reactjs.org
   ignoreIndex: false
   poweredBy:
     trademark: "/assets/gatsby.png"
@@ -64,16 +58,16 @@ pwa:
     icon: "/assets/favicon.png"
 
 social:
-  github: https://github.com/filipowm/boogi
-  linkedin: https://www.linkedin.com/in/mateusz-filipowicz-437b4768/
-  twitter: twitter url
+  github: https://github.com/rebugit
+#  linkedin: https://www.linkedin.com/in/mateusz-filipowicz-437b4768/
+  twitter: https://twitter.com/Madeo__
 
 features:
   darkMode:
-    enabled: true  
+    enabled: true
     default: false
   editOnRepo:
-    location: https://github.com/filipowm/boogi 
+    location: https://github.com/rebugit/docs
     type: github
     editable: true
   mermaid:
@@ -99,9 +93,9 @@ features:
     enabled: true
     title: BooGi Docs
     showIcon: false
-    copyright: "2020, Mateusz Filipowicz"
-    webMaster: "Mateusz Filipowicz"
-    managingEditor: "Mateusz Filipowicz"
+    copyright: "2020, Matteo Gioioso"
+    webMaster: "Matteo Gioioso"
+    managingEditor: "Matteo Gioioso"
     categories:
       - Docs as Code
       - GatsbyJS
@@ -129,7 +123,7 @@ features:
   toc:
     show: true
     depth: 4
-  fullScreenMode: 
+  fullScreenMode:
     enabled: true
     hideHeader: true
     hideToc: true

@@ -132,17 +132,6 @@ const ContentNavigation = ({ show, className, location }) => {
           </>
         ) : null}
       </SidebarMain>
-      {config.sidebar.poweredBy && config.sidebar.poweredBy.name ? (
-        <>
-          <PoweredByWrapper>
-            <PoweredBy
-              trademark={config.sidebar.poweredBy.trademark}
-              name={config.sidebar.poweredBy.name}
-              link={config.sidebar.poweredBy.link}
-            />
-          </PoweredByWrapper>
-        </>
-      ) : null}
     </NavigationWrapper>
   );
 };

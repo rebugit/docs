@@ -229,7 +229,7 @@ const Header = ({ setShowSearch, location, themeProvider, show, toggleFullscreen
         },
       } = data;
       const logoLink = logo.link !== '' ? logo.link : '/';
-      const logoImg = require('images/logo.svg');
+      const logoImg = require('images/logo.png');
       const [darkMode, setDarkMode] = useState(false);
       useEffect(() => {
         setDarkMode(themeProvider.current.retrieveActiveTheme());
@@ -283,8 +283,8 @@ const Header = ({ setShowSearch, location, themeProvider, show, toggleFullscreen
             <ButtonsWrapper>
               {isSearchEnabled ? (
                 <>
-                  <SearchOpener open={open} forcedComponent={'icon'} css={visibleTablet} />
-                  <SearchOpener open={open} css={hiddenTablet} />
+                  {/*<SearchOpener open={open} forcedComponent={'icon'} css={visibleTablet} />*/}
+                  {/*<SearchOpener open={open} css={hiddenTablet} />*/}
                 </>
               ) : null}
               {helpUrl && helpUrl.length > 0 ? (
@@ -296,12 +296,12 @@ const Header = ({ setShowSearch, location, themeProvider, show, toggleFullscreen
                 {SocialButtons(iconBaseProps, config.social)}
               </SocialButtonsWrapper>
               <RssIcon {...iconBaseProps} />
-              {config.features.fullScreenMode.enabled &&
-              config.features.fullScreenMode.enabled === true ? (
-                <FullScreenEnter toggle={toggleFullscreenMode} css={hiddenMobile} />
-              ) : (
-                ''
-              )}
+              {/*{config.features.fullScreenMode.enabled &&*/}
+              {/*config.features.fullScreenMode.enabled === true ? (*/}
+              {/*  <FullScreenEnter toggle={toggleFullscreenMode} css={hiddenMobile} />*/}
+              {/*) : (*/}
+              {/*  ''*/}
+              {/*)}*/}
               {DarkModeButton}
               <MobileMenuToggle toggle={toggleMenuOpen} open={menuOpen} />
             </ButtonsWrapper>
