@@ -89,7 +89,7 @@
     "build": "gatsby build",
     "format": "prettier --ignore-path \".gitignore\" --write \"**/*.{js,jsx,css,json}\"",
     "lint": "eslint --fix \"**/*.{js,jsx}\"",
-    "deploy": "npm run build && cp CNAME public/ && gh-pages -d public"
+    "deploy": "npm run build && cp CNAME public/CNAME && gh-pages -d public"
   },
   "devDependencies": {
     "babel-eslint": "10.1.0",
