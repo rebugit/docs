@@ -31,6 +31,9 @@ sidebar:
     - order: 2
       path: "/sdks"
       title: ":wrench: SDKs"
+    - order: 3
+      path: "/containers"
+      title: ":wrench: Containers"
 #    - order: 3
 #      path: "/editing"
 #      title: ":writing_hand: Editing Content"
