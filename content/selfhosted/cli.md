@@ -1,6 +1,6 @@
 ---
 title: "Rebugit CLI"
-order: 4
+order: 5
 ---
 
 <Tip>
