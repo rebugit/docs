@@ -9,6 +9,8 @@ order: 2
 
 - [Docker compose](/selfhosted/docker-compose)
 
+- Containers: run the containers yourself, you can check the **Containers** section or the [Rebugit public repository](https://gallery.ecr.aws/rebugit/)
+
 
 # Helm chart quick start
 Deploy the chart in your Kubernetes cluster:
