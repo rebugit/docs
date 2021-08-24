@@ -10,8 +10,8 @@ order: 2
 - [Docker compose](/selfhosted/docker-compose)
 
 
-## Helm chart quick start
-Deploy the chart in your Kubernetes cluster is very easy:
+# Helm chart quick start
+Deploy the chart in your Kubernetes cluster:
 
 1. Add the Rebugit helm repository:
   ```shell
@@ -34,9 +34,17 @@ Deploy the chart in your Kubernetes cluster is very easy:
     --set keycloak.auth.userPassword="$KEYCLOAK_USER_PASSWORD"
   ```
 
+
+<Info>
+
+**Note:** this chart is deployed using [Nginx ingress controller](https://kubernetes.github.io/ingress-nginx/).
+If you are using another ingress controller you can modify [the ingress section of the `values.yaml`](https://github.com/rebugit/standalone/blob/master/helm/values.yaml).
+
+</Info>
+
 ### After the deployment
 
-Your application will be running at: `yourapplicationhost.com/rebugit/web/`,
+Your application will be running at: `$APPLICATION_DOMAIN/rebugit/web/`,
 this link will redirect you to the login page where you can input your `KEYCLOAK_USER_NAME` and `KEYCLOAK_USER_PASSWORD`.
 
 You can now create a new project and grab the generated API key and paste it in your SDK.
@@ -54,8 +62,14 @@ You can now create a new project and grab the generated API key and paste it in 
 | `KEYCLOAK_USER_PASSWORD`  	| The password associated to the user above                                                                                                                                                	|
 
 
-For more information you can [visit the Github repository](https://github.com/rebugit/standalone)
+For more information you can check the chart repository [visit the Github repository](https://github.com/rebugit/standalone/tree/master/helm) or check the [full documentation](/selfhosted/helm-chart)
 
-## Docker compose
+### Sample applications
+
+You can check some *ready to deploy* sample applications [here](https://github.com/rebugit/standalone/tree/master/samples)
+
+---
+
+# Docker compose
 
 Coming soon
